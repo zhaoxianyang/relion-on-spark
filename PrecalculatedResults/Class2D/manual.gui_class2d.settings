@@ -1,0 +1,24 @@
+is_continue == false
+Output rootname: == Class2D/manual
+Continue from here:  == Class2D/autopick2_it023_optimiser.star
+Input images STAR file: == particles_manual.star
+Number of classes: == 10
+Do CTF-correction? == Yes
+Have data been phase-flipped? == No
+Ignore CTFs until first peak? == No
+Number of iterations: == 25
+Regularisation parameter T: == 2
+Mask individual particles with zeros? == Yes
+Limit resolution E-step to (A):  == -1
+Perform image alignment? == Yes
+In-plane angular sampling: == 5
+Offset search range (pix): == 5
+Offset search step (pix): == 1
+Number of MPI procs: == 11
+Number of threads: == 4
+Available RAM (in Gb) per thread: == 4
+Submit to queue? == Yes
+Queue name:  == openmpi
+Queue submit command: == qsub -l node_type=m620
+Standard submission script: == /public/EM/RELION/relion/bin/qsub.csh
+Additional arguments: == 

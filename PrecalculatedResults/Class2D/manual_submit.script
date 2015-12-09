@@ -1,0 +1,13 @@
+#!/bin/tcsh
+#$ -pe openmpi 11
+#$ -l dedicated=4 
+#$ -e Class2D/manual.err
+#$ -o Class2D/manual.out
+#$ -cwd
+#$ -S /bin/tcsh
+
+# Environment
+source ~/.cshrc
+
+mpiexec -n 11  `which relion_refine_mpi` --o Class2D/manual --i particles_manual.star --particle_diameter 200 --angpix 3.54 --ctf  --iter 25 --tau2_fudge 2 --K 10 --flatten_solvent  --zero_mask  --oversampling 1 --psi_step 10 --offset_range 5 --offset_step 2 --norm --scale  --j 4 --memory_per_thread 4 
+
